@@ -32,13 +32,13 @@ public class Task2_2 {
                 }
             }
             if(str1Num > str2Num){
-                System.out.print("behind str2 ");
+                System.out.print("behind");
                 break;
             }else if(str1Num < str2Num){
-                System.out.print("in front of str2 ");
+                System.out.print("in front of");
                 break;
             }
         }
-        System.out.println("in dictionary.");
+        System.out.println(" str2 in dictionary.");
     }
 }
