@@ -4,7 +4,7 @@ package mathmatical;
 // https://atcoder.jp/contests/abc006/tasks/abc006_2
 
 public class Task3_1 {
-    public static void main(String args[]){
+    public static void main(String[] args){
         // followings are initial numbers
         int a1 = 0;
         int a2 = 0;
