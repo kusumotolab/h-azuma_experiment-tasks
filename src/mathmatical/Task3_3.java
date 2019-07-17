@@ -1,7 +1,7 @@
 package mathmatical;
 
 // AtCoder Beginner Contest 026 - Bを改題
-// https://atcoder.jp/contests/abc026/tasks/abc026_3
+// https://atcoder.jp/contests/abc026/tasks/abc026_b
 
 import java.util.Arrays;
 import java.util.List;

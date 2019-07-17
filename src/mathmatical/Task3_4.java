@@ -1,7 +1,7 @@
 package mathmatical;
 
 // AtCoder Beginner Contest 030 - Bを改題
-// https://atcoder.jp/contests/abc029/tasks/abc030_2
+// https://atcoder.jp/contests/abc030/tasks/abc030_b
 
 public class Task3_4 {
     public static void main(String[] args){

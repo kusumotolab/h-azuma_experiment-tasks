@@ -1,7 +1,7 @@
 package control_list;
 
 // AtCoder Beginner Contest 024 - Bを改題
-// https://atcoder.jp/contests/abc024/tasks/abc024_2
+// https://atcoder.jp/contests/abc024/tasks/abc024_b
 
 import java.util.Arrays;
 import java.util.List;
