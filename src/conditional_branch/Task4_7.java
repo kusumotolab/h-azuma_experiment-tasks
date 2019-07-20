@@ -3,10 +3,13 @@ package conditional_branch;
 public class Task4_7 {
     public static void main(String[] args){
         String input = "3po2pl4mu3mi6d3";
+
+        // split input into one character
         String[] inputArray = input.split("");
         int ans = Integer.parseInt(input.substring(0, 1));
 
         for(int i = 1; i < inputArray.length; i += 2){
+            // change the type of calculation depending on the character
             switch (inputArray[i]){
                 case "p":
                     if(inputArray[i + 1].equals("l")){
