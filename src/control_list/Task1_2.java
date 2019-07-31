@@ -8,12 +8,12 @@ import java.util.List;
 
 public class Task1_2 {
     public static void main(String[] args) {
-        List<Integer> list = Arrays.asList(3, 5, 2, 7, 4);
-        int num = 18;
+        final List<Integer> list = Arrays.asList(3, 5, 2, 7, 4);
+        final int num = 18;
 
         // convert num into binary
-        String bin = Integer.toBinaryString(num);
-        String[] binArray = bin.split("");
+        final String bin = Integer.toBinaryString(num);
+        final String[] binArray = bin.split("");
 
         int sum = 0;
 

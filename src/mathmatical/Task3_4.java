@@ -6,8 +6,8 @@ package mathmatical;
 public class Task3_4 {
     public static void main(String[] args) {
         // consider clock
-        int shortHand = 15;
-        int longHand = 17;
+        final int shortHand = 15;
+        final int longHand = 17;
 
         // (6.0 / 0.5) is the angle (long / short) hand exceed per 1min.
         double longHandAngle = (double) longHand * 6.0;

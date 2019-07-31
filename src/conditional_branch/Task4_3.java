@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Task4_3 {
     public static void main(String[] args) {
-        String day = "sat";
+        final String day = "sat";
         List<Integer> candidate = new ArrayList<>();
 
         // 1st is Wednesday

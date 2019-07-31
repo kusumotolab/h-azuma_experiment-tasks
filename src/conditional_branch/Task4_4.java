@@ -9,7 +9,7 @@ public class Task4_4 {
         int temperature = 15;
 
         // weather is the weather until yesterday
-        List<String> weather = Arrays.asList("rainy", "snowy", "cloudy", "sunny", "sunny");
+        final List<String> weather = Arrays.asList("rainy", "snowy", "cloudy", "sunny", "sunny");
 
         for (String wh : weather) {
             switch (wh) {

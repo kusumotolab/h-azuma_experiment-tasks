@@ -5,9 +5,9 @@ package mathmatical;
 
 public class Task3_7 {
     public static void main(String[] args) {
-        int a = 84;
-        int b = 48;
-        int number = 7;
+        final int a = 84;
+        final int b = 48;
+        final int number = 7;
         int divisors = 0;
 
         int start, end;

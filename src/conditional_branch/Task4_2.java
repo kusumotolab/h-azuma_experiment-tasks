@@ -3,8 +3,8 @@ package conditional_branch;
 public class Task4_2 {
     public static void main(String[] args) {
         // input current time and season
-        String time = "0628PM";
-        String season = "su";
+        final String time = "0628PM";
+        final String season = "su";
 
         int hour = Integer.parseInt(time.substring(0, 2));
 

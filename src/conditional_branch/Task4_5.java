@@ -2,11 +2,11 @@ package conditional_branch;
 
 public class Task4_5 {
     public static void main(String[] args) {
-        String date = "0613";
+        final String date = "0613";
 
         // get month and day from date
-        int month = Integer.parseInt(date.substring(0, 2));
-        int day = Integer.parseInt(date.substring(2, 4));
+        final int month = Integer.parseInt(date.substring(0, 2));
+        final int day = Integer.parseInt(date.substring(2, 4));
         int diff = 0;
 
         for (int i = 1; i < month; i++) {

@@ -6,10 +6,10 @@ package mathmatical;
 public class Task3_8 {
     public static void main(String[] args) {
         // 0 <= x, y, z <= max
-        int max = 2;
+        final int max = 2;
 
         // x + y + z = sum
-        int sum = 2;
+        final int sum = 2;
         int count = 0;
 
         for (int x = 0; x <= max; x++) {

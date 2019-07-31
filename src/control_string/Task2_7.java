@@ -2,8 +2,8 @@ package control_string;
 
 public class Task2_7 {
     public static void main(String[] args) {
-        String str = "HAHOGAKZZFEGA";
-        char[] strArray = str.toCharArray();
+        final String str = "HAHOGAKZZFEGA";
+        final char[] strArray = str.toCharArray();
         int start = 0;
         int end = 0;
         boolean flg = false;
@@ -19,6 +19,6 @@ public class Task2_7 {
         }
 
         // output distance between 'A' and 'Z'
-        System.out.println(end - start + 1);
+        System.out.println(end - start - 1);
     }
 }

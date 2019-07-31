@@ -5,40 +5,33 @@ package control_string;
 
 public class Task2_2 {
     public static void main(String[] args) {
-        char ascii = 65; // "65" is "A"
-        String[] character = new String[26];
+        // alphabets stores "A" to "Z"
+        final String[] alphabets = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J",
+                              "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T",
+                              "U", "V", "W", "X", "Y", "Z"};
 
-        // set from "A" to "Z" to character[]
-        for (int i = 0; i < character.length; i++) {
-            character[i] = String.valueOf((char) (ascii + i));
-        }
+        // str1 is "OSUSHI", str2 is "OSECHI"
+        final String[] str1 = {"O", "S", "U", "S", "H", "I"};
+        final String[] str2 = {"O", "S", "E", "C", "H", "I"};
 
-        String str1 = "OSUSHI";
-        String str2 = "OSECHI";
-
-        String[] str1Array = str1.split("");
-        String[] str2Array = str2.split("");
-
-        System.out.print("str1 is ");
-        for (int i = 0; i < str1Array.length; i++) {
+        for (int i = 0; i < str1.length; i++) {
             int str1Num = -1;
             int str2Num = -1;
-            for (int j = 0; j < character.length; j++) {
-                if (str1Array[i].equals(character[j])) {
+            for (int j = 0; j < alphabets.length; j++) {
+                if (str1[i].equals(alphabets[j])) {
                     str1Num = j;
                 }
-                if (str2Array[i].equals(character[j])) {
+                if (str2[i].equals(alphabets[j])) {
                     str2Num = j;
                 }
             }
             if (str1Num > str2Num) {
-                System.out.print("behind");
+                System.out.println("OSECHI");
                 break;
             } else if (str1Num < str2Num) {
-                System.out.print("in front of");
+                System.out.println("OSUSHI");
                 break;
             }
         }
-        System.out.println(" str2 in dictionary.");
     }
 }

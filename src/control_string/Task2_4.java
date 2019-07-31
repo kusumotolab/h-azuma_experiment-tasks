@@ -5,15 +5,15 @@ package control_string;
 
 public class Task2_4 {
     public static void main(String[] args) {
-        String str = "ababbcca";
-        char[] character = str.toCharArray();
+        final String str = "ababbcca";
+        final char[] characters = str.toCharArray();
 
         // "alphabet" stores the number of each alphabet in "str"
         int[] alphabet = new int[26];
 
         // count the number of each alphabet in "str"
-        for (char c : character) {
-            alphabet[c - 'a'] += 1;
+        for (int i = 0; i < characters.length; i++) {
+            alphabet[characters[i] - 'a'] += 1;
         }
 
         boolean answer = true;
@@ -24,6 +24,6 @@ public class Task2_4 {
             }
         }
 
-        System.out.println(answer ? "Yes" : "No");
+        System.out.println(answer ? "Even" : "Odd");
     }
 }

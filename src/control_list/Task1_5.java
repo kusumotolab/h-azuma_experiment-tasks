@@ -8,13 +8,13 @@ import java.util.List;
 
 public class Task1_5 {
     public static void main(String[] args) {
-        List<String> list = new ArrayList<>();
-        String input = "0011B10";
-        String[] inputArray = input.split("");
+        final List<String> list = new ArrayList<>();
+        final String input = "0011B10";
+        final String[] inputArray = input.split("");
 
-        for (String character : inputArray) {
-            if (character.equals("0") || character.equals("1")) {
-                list.add(character);
+        for (int i = 0; i < inputArray.length; i++) {
+            if (inputArray[i].equals("0") || inputArray[i].equals("1")) {
+                list.add(inputArray[i]);
             } else {
                 if (list.size() != 0) {
                     list.remove(list.size() - 1);
@@ -22,8 +22,11 @@ public class Task1_5 {
             }
         }
 
-        for (String output : list) {
-            System.out.print(output);
+        String output = "";
+        for (int i = 0; i < list.size(); i++) {
+            output += list.get(i);
         }
+
+        System.out.println(output);
     }
 }

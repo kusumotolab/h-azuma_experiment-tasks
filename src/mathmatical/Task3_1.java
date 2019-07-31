@@ -17,7 +17,7 @@ public class Task3_1 {
         for (int i = 0; i < 5; i++) {
             tmp = a1 + a2 + a3;
 
-            if (i + 1 >= 5) {
+            if (i + 1 == 5) {
                 an = tmp;
                 break;
             }

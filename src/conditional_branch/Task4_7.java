@@ -2,10 +2,10 @@ package conditional_branch;
 
 public class Task4_7 {
     public static void main(String[] args) {
-        String input = "3po2pl4mu3mi6d3";
+        final String input = "3po2pl4mu3mi6d3";
 
         // split input into one character
-        String[] inputArray = input.split("");
+        final String[] inputArray = input.split("");
         int ans = Integer.parseInt(input.substring(0, 1));
 
         for (int i = 1; i < inputArray.length; i += 2) {

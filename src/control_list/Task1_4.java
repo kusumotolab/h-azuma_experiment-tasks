@@ -8,13 +8,13 @@ import java.util.List;
 
 public class Task1_4 {
     public static void main(String[] args) {
-        List<String> list = Arrays.asList("january", "february", "march", "april", "may", "june");
+        final List<String> list = Arrays.asList("january", "february", "march", "april", "may", "june");
 
         int count = 0;
 
-        for (String str : list) {
+        for (int i = 0; i < list.size(); i++) {
             // split a string into single characters
-            String[] strArray = str.split("");
+            String[] strArray = list.get(i).split("");
             for (String character : strArray) {
                 if (character.equals("r")) {
                     // count records the number of strings containing "r"
