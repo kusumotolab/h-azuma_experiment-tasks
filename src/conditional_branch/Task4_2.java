@@ -1,5 +1,8 @@
 package conditional_branch;
 
+// AtCoder Beginner Contest 039 - Bを改題
+// https://atcoder.jp/contests/abc039/tasks/abc039_c
+
 public class Task4_2 {
     public static void main(String[] args) {
         // input current time and season

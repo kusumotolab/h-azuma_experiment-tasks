@@ -1,5 +1,8 @@
 package conditional_branch;
 
+// AtCoder Beginner Contest 019 - Bを改題
+// https://atcoder.jp/contests/abc019/tasks/abc019_2
+
 public class Task4_7 {
     public static void main(String[] args) {
         final String input = "3po2pl4mu3mi6d3";
