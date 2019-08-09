@@ -3,27 +3,22 @@ package control_list;
 // AtCoder Beginner Contest 064 - Bを改題
 // https://atcoder.jp/contests/abc064/tasks/abc064_b
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Task1_7 {
-    public static void main(String[] args) {
-        final List<Integer> list1 = Arrays.asList(5, 7, 2, 3, 4, 5);
-        List<Integer> list2 = Arrays.asList(Integer.MIN_VALUE, Integer.MIN_VALUE, Integer.MAX_VALUE, Integer.MAX_VALUE);
 
-        for (int i = 0; i < list1.size(); i++) {
-            if (list1.get(i) > list2.get(0)) {
-                // list2(1) is the second biggest number in list1
-                list2.set(1, list2.get(0));
-                list2.set(0, list1.get(i));
-            } else if (list1.get(i) < list2.get(3)) {
-                list2.set(3, list1.get(i));
-            } else if (list1.get(i) < list2.get(2)) {
-                // list2(2) is the second smallest number in list1
-                list2.set(2, list1.get(i));
-            }
-        }
+  public static void main(String[] args) {
+    final String str1 = "summer";
+    final String str2 = "winter";
 
-        System.out.println((list2.get(0) - list2.get(3)) + (list2.get(1) - list2.get(2)));
+    String buffer1 = "";
+    String buffer2 = "";
+
+    for (int i = 0; i < str1.length(); i++) {
+      if (str1.charAt(i) != str2.charAt(i)) {
+        buffer1 += str1.charAt(i);
+        buffer2 += str2.charAt(i);
+      }
     }
+
+    System.out.println(buffer1 + buffer2);
+  }
 }

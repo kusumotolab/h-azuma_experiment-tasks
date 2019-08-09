@@ -7,24 +7,25 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Task1_4 {
-    public static void main(String[] args) {
-        final List<String> list = Arrays.asList("january", "february", "march", "april", "may", "june");
 
-        int count = 0;
+  public static void main(String[] args) {
+    final List<String> list = Arrays.asList("january", "february", "march", "april", "may", "june");
 
-        for (int i = 0; i < list.size(); i++) {
-            // split a string into single characters
-            String[] strArray = list.get(i).split("");
-            for (String character : strArray) {
-                if (character.equals("r")) {
-                    // count records the number of strings containing "r"
-                    count++;
-                    break;
-                }
-            }
+    int n = 0;
+
+    for (int i = 0; i < list.size(); i++) {
+      // split a string into single chars array
+      final String[] strArray = list.get(i).split("");
+      
+      for (String character : strArray) {
+        if (character.equals("r")) {
+          // count the number of strings containing "r"
+          n++;
+          break;
         }
-
-        System.out.println(count);
-
+      }
     }
+
+    System.out.println(n);
+  }
 }
