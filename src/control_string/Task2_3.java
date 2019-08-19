@@ -7,19 +7,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Task2_3 {
-  public static void main(String[] args) {
-    final String str = "abcabc";
-    int substringNum = 0;
 
-    for (int i = 1; i <= 3; i++) {
-      // "set" is a set of unique strings of length i
-      Set<String> set = new HashSet<>();
-      for (int j = 0; j < str.length() - i + 1; j++) {
-        set.add(str.substring(j, j + i));
-      }
-      substringNum += set.size();
+  public static void main(String[] args) {
+    final String str = "abcaabc";
+    int windowSize = 2;
+
+    Set<String> set = new HashSet<>();
+    for (int i = 0; i < str.length() - windowSize + 1; i++) {
+      set.add(str.substring(i, i + windowSize));
     }
-    // output the number of species of the strings in "set"
-    System.out.println(substringNum);
+    
+    System.out.println(set.size());
   }
 }

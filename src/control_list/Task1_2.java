@@ -10,7 +10,7 @@ public class Task1_2 {
 
   public static void main(String[] args) {
     final List<Integer> list = Arrays.asList(3, 5, 2, 7, 4);
-    int filter = 18;
+    final int filter = 18;
 
     // convert integer to binary
     final String binary = Integer.toBinaryString(filter);

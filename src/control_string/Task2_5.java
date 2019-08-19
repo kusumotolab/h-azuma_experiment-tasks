@@ -5,39 +5,25 @@ package control_string;
 
 public class Task2_5 {
   public static void main(String[] args) {
-    String handOfA = "bcaac";
-    String handOfB = "acbba";
-    String handOfC = "cacbb";
-    char turn = 'a';
-    char winner;
+    final String handOfA = "12221";
+    final String handOfB = "13312";
+    int sum = 0;
+    char winner = '-';
 
-    while (true) {
-      // can win when lose all characters in hand
-      // determine the person who can act next by the head character
-      if (turn == 'a') {
-        turn = handOfA.charAt(0);
-        handOfA = handOfA.substring(1);
-        if (handOfA.length() == 0) {
-          winner = 'a';
-          break;
-        }
-      } else if (turn == 'b') {
-        turn = handOfB.charAt(0);
-        handOfB = handOfB.substring(1);
-        if (handOfB.length() == 0) {
-          winner = 'b';
-          break;
-        }
-      } else if (turn == 'c') {
-        turn = handOfC.charAt(0);
-        handOfC = handOfC.substring(1);
-        if (handOfC.length() == 0) {
-          winner = 'c';
-          break;
-        }
+    for (int i = 0; i < handOfA.length(); i++) {
+      sum += handOfA.charAt(i) - '0'; // convert char to int
+      if (sum >= 10) {
+        winner = 'b';
+        break;
+      }
+      
+      sum += handOfB.charAt(i) -'0';
+      if (sum >= 10) {
+        winner = 'a';
+        break;
       }
     }
 
-    System.out.println(winner);
+    System.out.println(winner + " " + sum);
   }
 }

@@ -4,26 +4,25 @@ package control_string;
 // https://atcoder.jp/contests/abc044/tasks/abc044_b
 
 public class Task2_4 {
+
   public static void main(String[] args) {
-    final String str = "ababbcca";
-    final char[] characters = str.toCharArray();
+    final String str = "1202141";
 
-    // "alphabet" stores the number of each alphabet in "str"
-    int[] alphabet = new int[26];
-
-    // count the number of each alphabet in "str"
-    for (int i = 0; i < characters.length; i++) {
-      alphabet[characters[i] - 'a'] += 1;
+    // "alphabet" stores the number of occurence of each alphabet in "str"
+    int[] number = new int[10];
+    for (int i = 0; i < str.length(); i++) {
+      int index = str.charAt(i) - '0'; // convert char to index
+      number[index]++;
     }
 
-    boolean answer = true;
-    for (int i = 0; i < 26; i++) {
-      if (alphabet[i] % 2 != 0) {
-        answer = false;
+    int answer = 0;
+    for (int i = 0; i < 10; i++) {
+      if (number[i] == 0) {
+        answer = i;
         break;
       }
     }
 
-    System.out.println(answer ? "Even" : "Odd");
+    System.out.println("the missing number is " + answer);
   }
 }

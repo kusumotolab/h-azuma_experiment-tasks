@@ -3,25 +3,18 @@ package control_string;
 // AtCoder Beginner Contest 002 - Bを改題
 // https://atcoder.jp/contests/abc002/tasks/abc002_2
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 public class Task2_1 {
   public static void main(String[] args) {
-    final String str = "amkllannsnom";
-
-    // store the character of the string one by one
-    List<String> stringList = new ArrayList<String>(Arrays.asList(str.split("")));
-
-    stringList.removeIf(s -> s.matches("l|m|n"));
-
-    String output = "";
-    // output the remained string
-    for (int i = stringList.size() - 1; i >= 0; i--) {
-      output += stringList.get(i);
+    final String str = "amklammslo";
+    
+    String buffer = "";
+    
+    for (int i = str.length() - 1; i >= 0; i--) {
+      if (str.charAt(i) != 'm' && str.charAt(i) != 'l') {
+        buffer += str.charAt(i);
+      }
     }
-
-    System.out.println(output);
+    
+    System.out.println(buffer);
   }
 }
