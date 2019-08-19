@@ -16,7 +16,7 @@ public class Task1_4 {
     for (int i = 0; i < list.size(); i++) {
       // split a string into single chars array
       final String[] strArray = list.get(i).split("");
-      
+
       for (String character : strArray) {
         if (character.equals("r")) {
           // count the number of strings containing "r"

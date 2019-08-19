@@ -16,6 +16,7 @@ public class Task1_6 {
     for (int s1 : list1) {
       for (int s2 : list2) {
         if (Math.abs(s1 - s2) <= 1) {
+          // count the number of pairs matched the condition
           pairs++;
         }
       }
