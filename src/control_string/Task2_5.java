@@ -12,12 +12,14 @@ public class Task2_5 {
 
     for (int i = 0; i < handOfA.length(); i++) {
       sum += handOfA.charAt(i) - '0'; // convert char to int
+
+      // player lose if sum exceed 10
       if (sum >= 10) {
         winner = 'b';
         break;
       }
-      
-      sum += handOfB.charAt(i) -'0';
+
+      sum += handOfB.charAt(i) - '0';
       if (sum >= 10) {
         winner = 'a';
         break;

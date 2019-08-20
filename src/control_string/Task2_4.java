@@ -8,7 +8,7 @@ public class Task2_4 {
   public static void main(String[] args) {
     final String str = "1202141";
 
-    // "alphabet" stores the number of occurence of each alphabet in "str"
+    // "alphabet" stores the number of occurrence of each alphabet in "str"
     int[] number = new int[10];
     for (int i = 0; i < str.length(); i++) {
       int index = str.charAt(i) - '0'; // convert char to index
