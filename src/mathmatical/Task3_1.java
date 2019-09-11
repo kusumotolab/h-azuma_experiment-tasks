@@ -12,13 +12,13 @@ public class Task3_1 {
 
     // tmp is a temporary variable
     int tmp;
-    int an = 0;
+    int answer = 0;
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 4; i++) {
       tmp = a1 + a2 + a3;
 
-      if (i + 1 == 5) {
-        an = tmp;
+      if (i == 3) {
+        answer = tmp;
         break;
       }
 
@@ -27,6 +27,6 @@ public class Task3_1 {
       a3 = tmp;
     }
 
-    System.out.println(an);
+    System.out.println(answer);
   }
 }

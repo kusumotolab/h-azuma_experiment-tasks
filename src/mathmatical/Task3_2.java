@@ -12,7 +12,7 @@ public class Task3_2 {
     int turtle = sum;
 
     // human has 2 legs and turtle has 4 legs
-    while (!(2 * human + 4 * turtle == legs && human + turtle == sum)) {
+    while (2 * human + 4 * turtle != legs) {
       // Reduce turtle number and add human number
       human++;
       turtle--;
