@@ -10,14 +10,14 @@ public class Task4_2 {
     final String season = "su";
 
     int hour = Integer.parseInt(time.substring(0, 2));
+    int dayThreshold = 0;
+    int nightThreshold = 0;
 
     // change hour into 24-hour clock
     if (time.charAt(4) == 'P') {
       hour += 12;
     }
 
-    int dayThreshold = 0;
-    int nightThreshold = 0;
     switch (season) {
       case "sp":
       case "au":

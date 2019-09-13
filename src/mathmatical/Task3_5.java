@@ -5,11 +5,12 @@ package mathmatical;
 
 public class Task3_5 {
   public static void main(String[] args) {
+    final String command = "URLLDU";
+    final String[] commandArray = command.split("");
+
     // initial coordinate is (0, 0)
     int[] coordinate = new int[2];
-    final String command = "URLLDU";
 
-    String[] commandArray = command.split("");
     for (String cmd : commandArray) {
       switch (cmd) {
         case "U":

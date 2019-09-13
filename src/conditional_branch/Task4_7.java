@@ -7,7 +7,7 @@ public class Task4_7 {
   public static void main(String[] args) {
     final String input = "3po2pl4mu3mi6d3";
 
-    // split input into one character
+    // split "input" into one character
     final String[] inputArray = input.split("");
     int ans = Integer.parseInt(input.substring(0, 1));
 
@@ -18,7 +18,7 @@ public class Task4_7 {
           if (inputArray[i + 1].equals("l")) {
             ans += Integer.parseInt(inputArray[i + 2]);
           } else {
-            ans = (int) Math.pow((double) ans, Double.parseDouble(inputArray[i + 2]));
+            ans = (int) Math.pow(ans, Double.parseDouble(inputArray[i + 2]));
           }
           i++;
           break;

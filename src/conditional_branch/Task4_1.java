@@ -5,11 +5,11 @@ package conditional_branch;
 
 public class Task4_1 {
   public static void main(String[] args) {
-    final String birthday = "4/8";
-
+    final String birthday = "6/5";
     // split birthday into moth and day
     final int month = Integer.parseInt(birthday.split("")[0]);
     final int day = Integer.parseInt(birthday.split("")[2]);
+
     String stone = "";
 
     // select the birthstone

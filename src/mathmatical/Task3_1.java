@@ -6,27 +6,24 @@ package mathmatical;
 public class Task3_1 {
   public static void main(String[] args) {
     // followings are initial numbers
-    int a1 = 0;
-    int a2 = 0;
-    int a3 = 1;
+    final int a1 = 0;
+    final int a2 = 0;
+    final int a3 = 1;
 
-    // tmp is a temporary variable
-    int tmp;
-    int answer = 0;
+    // an is n-th number in this sequence
+    int an = 0;
+    int an_3 = a1;
+    int an_2 = a2;
+    int an_1 = a3;
 
     for (int i = 0; i < 4; i++) {
-      tmp = a1 + a2 + a3;
+      an = an_3 + an_2 + an_1;
 
-      if (i == 3) {
-        answer = tmp;
-        break;
-      }
-
-      a1 = a2;
-      a2 = a3;
-      a3 = tmp;
+      an_3 = an_2;
+      an_2 = an_1;
+      an_1 = an;
     }
 
-    System.out.println(answer);
+    System.out.println(an);
   }
 }

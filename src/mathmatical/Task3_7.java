@@ -8,9 +8,10 @@ public class Task3_7 {
     final int a = 84;
     final int b = 48;
     final int number = 7;
-    int divisors = 0;
 
+    int divisors = 0;
     int start, end;
+
     // set start and end
     if (a > b) {
       start = b;
