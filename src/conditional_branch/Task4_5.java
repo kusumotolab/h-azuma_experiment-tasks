@@ -20,8 +20,11 @@ public class Task4_5 {
           diff -= 2;
           break;
         case 4:
+          break;
         case 6:
+          break;
         case 9:
+          break;
         case 11:
           break;
         default:

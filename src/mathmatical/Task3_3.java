@@ -7,22 +7,24 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Task3_3 {
+
   public static void main(String[] args) {
     final List<Integer> radius = Arrays.asList(3, 4, 6);
-
-    // divide in order from small circle to red and white
     int redArea = 0;
     int whiteArea = 0;
 
     for (int i = 0; i < radius.size(); i++) {
       // pi has been removed for simplicity
+      final int area = radius.get(i) * radius.get(i);
+
+      // even is red, odd is white
       if (i % 2 == 0) {
-        redArea += (int) Math.pow(radius.get(i), 2);
+        redArea += area;
       } else {
-        whiteArea += (int) Math.pow(radius.get(i), 2);
+        whiteArea += area;
       }
     }
 
-    System.out.println(redArea - whiteArea + "pi square meters");
+    System.out.println(redArea - whiteArea);
   }
 }

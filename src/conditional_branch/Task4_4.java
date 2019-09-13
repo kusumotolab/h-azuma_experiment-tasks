@@ -9,17 +9,18 @@ import java.util.List;
 public class Task4_4 {
   public static void main(String[] args) {
     // weather is the weather until yesterday
-    final List<String> weather = Arrays.asList("rainy", "snowy", "cloudy", "sunny", "sunny");
+    final List<String> pastWeathers = Arrays.asList("rainy", "rainy", "snowy", "cloudy", "sunny");
 
     // set initial today's temperature
     int temperature = 15;
 
-    for (String wh : weather) {
-      switch (wh) {
+    for (String wheather : pastWeathers) {
+      switch (wheather) {
         case "sunny":
           temperature += 3;
           break;
         case "cloudy":
+          // do nothing
           break;
         case "rainy":
           temperature -= 2;

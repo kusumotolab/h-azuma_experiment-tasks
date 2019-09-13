@@ -4,14 +4,17 @@ package mathmatical;
 // https://atcoder.jp/contests/abc030/tasks/abc030_b
 
 public class Task3_4 {
+
   public static void main(String[] args) {
     // consider clock
-    final int shortHand = 15;
-    final int longHand = 17;
+    final int shortHand = 2; // 10?
+    final int longHand = 20; // 40?
+
+    //xx
+    double shortHandAngle = (double) (shortHand % 12) * 30.0 + (double) longHand * 0.5;
 
     // [6.0 or 0.5] is the angle [long or short] hand exceed per 1min.
     double longHandAngle = (double) longHand * 6.0;
-    double shortHandAngle = (double) (shortHand % 12) * 30.0 + (double) longHand * 0.5;
 
     if (shortHandAngle >= longHandAngle) {
       System.out.println(shortHandAngle - longHandAngle);

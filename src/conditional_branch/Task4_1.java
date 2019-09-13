@@ -4,11 +4,13 @@ package conditional_branch;
 // https://atcoder.jp/contests/abc039/tasks/abc039_c
 
 public class Task4_1 {
+
   public static void main(String[] args) {
-    final String birthday = "6/5";
-    // split birthday into moth and day
-    final int month = Integer.parseInt(birthday.split("")[0]);
-    final int day = Integer.parseInt(birthday.split("")[2]);
+    final String birthday = "0605";
+    
+    // get month and day from date
+    final int month = Integer.parseInt(birthday.substring(0, 2));
+    final int day = Integer.parseInt(birthday.substring(2, 4));
 
     String stone = "";
 

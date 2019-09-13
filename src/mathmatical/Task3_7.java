@@ -5,11 +5,11 @@ package mathmatical;
 
 public class Task3_7 {
   public static void main(String[] args) {
-    final int a = 84;
-    final int b = 48;
-    final int number = 7;
+    final int a = 90;
+    final int b = 50;
+    final int base = 7;
 
-    int divisors = 0;
+    int count = 0;
     int start, end;
 
     // set start and end
@@ -23,11 +23,11 @@ public class Task3_7 {
 
     for (int i = start; i < end; i++) {
       // count divisors between start and end
-      if (i % number == 0) {
-        divisors++;
+      if (i % base == 0) {
+        count++;
       }
     }
 
-    System.out.println(divisors);
+    System.out.println(count);
   }
 }

@@ -4,9 +4,11 @@ package mathmatical;
 // https://atcoder.jp/contests/abc051/tasks/abc051_b
 
 public class Task3_6 {
+
   public static void main(String[] args) {
     // 0 <= x, y, z <= max
     final int max = 2;
+
     // x + y + z = sum
     final int sum = 2;
 
@@ -17,11 +19,10 @@ public class Task3_6 {
         int z = sum - x - y;
         if (0 <= z && z <= max) {
           count++;
-        } else if (z < 0) {
-          break;
         }
       }
     }
+    
     System.out.println(count);
   }
 }

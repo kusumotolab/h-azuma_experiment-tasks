@@ -7,7 +7,7 @@ public class Task4_2 {
   public static void main(String[] args) {
     // input current time and season
     final String time = "0628PM";
-    final String season = "su";
+    final String season = "summer";
 
     int hour = Integer.parseInt(time.substring(0, 2));
     int dayThreshold = 0;
@@ -19,16 +19,16 @@ public class Task4_2 {
     }
 
     switch (season) {
-      case "sp":
-      case "au":
+      case "spring":
+      case "autumn":
         dayThreshold = 6;
         nightThreshold = 18;
         break;
-      case "su":
+      case "summer":
         dayThreshold = 5;
         nightThreshold = 19;
         break;
-      case "wi":
+      case "winter":
         dayThreshold = 7;
         nightThreshold = 17;
         break;

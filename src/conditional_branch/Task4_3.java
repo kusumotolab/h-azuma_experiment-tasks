@@ -8,39 +8,38 @@ import java.util.List;
 
 public class Task4_3 {
   public static void main(String[] args) {
-    final String targetDay = "sat";
+    final String week = "Sat";
+    int firstDay = 1;
 
-    List<Integer> candidate = new ArrayList<>();
-    // 1st is Wednesday
-    int firstTargetDay = 1;
-
-    switch (targetDay) {
-      case "mon":
-        firstTargetDay += 5;
+    switch (week) {
+      case "Mon":
+        firstDay += 5;
         break;
       case "tue":
-        firstTargetDay += 6;
+        firstDay += 6;
         break;
       case "wed":
-        // do nothing
+        // 1st is Wednesday
         break;
       case "thu":
-        firstTargetDay++;
+        firstDay++;
         break;
       case "fri":
-        firstTargetDay += 2;
+        firstDay += 2;
         break;
       case "sat":
-        firstTargetDay += 3;
+        firstDay += 3;
         break;
       case "sun":
-        firstTargetDay += 4;
+        firstDay += 4;
         break;
     }
 
-    for (int i = firstTargetDay; i <= 31; i += 7) {
+    List<Integer> candidate = new ArrayList<>();
+    for (int i = firstDay; i <= 31; i += 7) {
       candidate.add(i);
     }
-    System.out.println(candidate.get(candidate.size() - 2));
+    
+    System.out.println(candidate.get(candidate.size() - 1));
   }
 }
