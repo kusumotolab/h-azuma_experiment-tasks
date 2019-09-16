@@ -7,31 +7,29 @@ public class Task4_7 {
 
   public static void main(String[] args) {
     final String input = "3p2p4m3d3p1";
-
-    // split "input" into one character
     final String[] inputArray = input.split("");
-    
+
     // retrieve the first value
-    int ans = Integer.parseInt(input.substring(0, 1));
+    int answer = Integer.parseInt(input.substring(0, 1));
 
     for (int i = 1; i < inputArray.length; i += 2) {
-      final String operation = inputArray[i];
+      final String operator = inputArray[i];
       final int secondValue = Integer.parseInt(inputArray[i + 1]);
 
       // change the calculation operation based on the character
-      switch (operation) {
+      switch (operator) {
         case "p":
-          ans += secondValue;
+          answer += secondValue;
           break;
         case "m":
-          ans -= secondValue;
+          answer -= secondValue;
           break;
         case "d":
-          ans /= secondValue;
+          answer /= secondValue;
           break;
       }
     }
 
-    System.out.println(ans);
+    System.out.println(answer);
   }
 }

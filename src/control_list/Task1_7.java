@@ -18,7 +18,7 @@ public class Task1_7 {
 
     for (int i = 0; i < list1.size(); i++) {
       if (list1.get(i) != list2.get(i)) {
-        // store character
+        // store each characters
         buffer1 += list1.get(i);
         buffer2 += list2.get(i);
       }

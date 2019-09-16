@@ -31,9 +31,9 @@ public class Task4_6 {
     }
 
     int output = 0;
-    for (int i = 0; i < binaries.size(); i++) {
+    for (String binary : binaries) {
       // summing up bins as decimal
-      output += Integer.parseInt(binaries.get(i));
+      output += Integer.parseInt(binary);
     }
 
     System.out.println(output);

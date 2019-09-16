@@ -15,22 +15,22 @@ public class Task4_3 {
       case "Mon":
         firstDay += 5;
         break;
-      case "tue":
+      case "Tue":
         firstDay += 6;
         break;
-      case "wed":
+      case "Wed":
         // 1st is Wednesday
         break;
-      case "thu":
+      case "Thu":
         firstDay++;
         break;
-      case "fri":
+      case "Fri":
         firstDay += 2;
         break;
-      case "sat":
+      case "Sat":
         firstDay += 3;
         break;
-      case "sun":
+      case "Sun":
         firstDay += 4;
         break;
     }
@@ -39,7 +39,7 @@ public class Task4_3 {
     for (int i = firstDay; i <= 31; i += 7) {
       candidate.add(i);
     }
-    
+
     System.out.println(candidate.get(candidate.size() - 1));
   }
 }

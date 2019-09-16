@@ -12,7 +12,7 @@ public class Task3_7 {
     int count = 0;
     int start, end;
 
-    // set start and end
+    // set "start" and "end"
     if (a > b) {
       start = b;
       end = a;
@@ -22,7 +22,7 @@ public class Task3_7 {
     }
 
     for (int i = start; i < end; i++) {
-      // count divisors between start and end
+      // count multiples of 7 between start and end
       if (i % base == 0) {
         count++;
       }

@@ -17,12 +17,14 @@ public class Task3_6 {
     for (int x = 0; x <= max; x++) {
       for (int y = 0; y <= max; y++) {
         int z = sum - x - y;
+
         if (0 <= z && z <= max) {
           count++;
         }
+
       }
     }
-    
+
     System.out.println(count);
   }
 }

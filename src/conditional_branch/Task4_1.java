@@ -7,7 +7,7 @@ public class Task4_1 {
 
   public static void main(String[] args) {
     final String birthday = "0605";
-    
+
     // get month and day from date
     final int month = Integer.parseInt(birthday.substring(0, 2));
     final int day = Integer.parseInt(birthday.substring(2, 4));
