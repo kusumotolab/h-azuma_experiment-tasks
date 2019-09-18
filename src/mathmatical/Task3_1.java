@@ -1,26 +1,27 @@
 package mathmatical;
 
-// AtCoder Beginner Contest 006 - Bを改題
-// https://atcoder.jp/contests/abc006/tasks/abc006_2
+import java.util.Arrays;
+import java.util.List;
 
 public class Task3_1 {
   public static void main(String[] args) {
-    // initial numbers
-    int a1 = 0;
-    int a2 = 0;
-    int a3 = 1;
+    // prime number is the number isn't divisible without 1 and itself
+    final List<Integer> primeNumbers = Arrays.asList(2, 3, 5, 7, 11, 13, 17);
 
-    int sum = 0;
+    int target = 220;
+    int i = 0;
+    int count = 0;
 
-    for (int i = 0; sum < 10; i++) {
-      sum = a1 + a2 + a3;
-
-      // swap variables
-      a1 = a2;
-      a2 = a3;
-      a3 = sum;
+    while (target != 1) {
+      if (target % primeNumbers.get(i) == 0) {
+        target /= primeNumbers.get(i);
+        count++;
+      } else {
+        // look at next prime number
+        i++;
+      }
     }
 
-    System.out.println(sum);
+    System.out.println(count);
   }
 }
